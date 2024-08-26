@@ -1,0 +1,22 @@
+database={1:[11010,"saving",2000],2:[22010,"current",9000]}
+a=int(input("enter the account number:"))
+if a in database:
+    b=int(input("enter pin"))
+else:
+    print("invalid account number:")
+    exit()
+if b==database[a][0]:
+    c=input("enter tne saving/current")
+else:
+    print("wrong pin")
+    exit()
+if c==database[a][1] :
+     d=int(input("enter money to withdraw"))
+else:
+    print("invalid account type")
+    exit()
+if d<=database[a][2]:
+    print(d)
+    print("balance:",database[a][2]-d)
+else:
+    print("infficent balance")
