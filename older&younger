@@ -1,0 +1,15 @@
+a=int(input("enter a:"))
+b=int(input("enter b:"))
+c=int(input("enter c:"))
+if a>=b and a>=c:
+    print("older",a)
+elif b>=c and b>=a:
+    print("older",b)
+else:
+    print("oldeer",c)
+if a<=b and a<=c:
+    print("younger",a)
+elif b<=c and b<=a:
+    print("younger",b)
+else:
+    print("younger",c)
