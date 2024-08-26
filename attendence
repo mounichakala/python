@@ -1,0 +1,8 @@
+a=60
+print("total no of classes:",a)
+b=int(input("enter the no classes attended:"))
+c=(b/a)*100
+if c>=75:
+    print("student can attend the exam",c)
+else:
+    print("student cannot attend the exam due to low attendence",c)
