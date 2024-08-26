@@ -1,0 +1,11 @@
+a=60
+print("total no of classes:",a)
+b=int(input("enter the no classes attended:"))
+d=input("do u have any medical issue[y/n]:")
+k='y'
+
+c=(b/a)*100
+if c>=75 or k==d:
+    print("student can attend the exam",c)
+else:
+    print("student cannot attend the exam due to low attendence",c)
