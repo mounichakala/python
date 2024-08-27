@@ -1,3 +1,4 @@
+******************match case*****************
 a=int(input("enter the choice"))
 if a in range(1,5):
  b=int(input("enter number"))
@@ -15,3 +16,57 @@ match a:
         print("exit")
     case _:
         print("wrong choice u entered")
+*****# exmple 2:***********
+find vowels and consonents:
+a=input("enter the alphabet")
+match a.lower():
+    case 'a'|'e'|'i'|'o'|'u':
+        print("vowels")
+    case _ if a.isalpha():
+        print("consonents")
+    case _:
+        print("not a alphabet")
+
+**********#example 3:**************
+[even and odd]
+a=int(input("enter the num"))
+match a:
+    case _ if a%2==0:
+        print("even")
+    case _ :
+        print("odd")
+******mini project{menu}*****
+print("MENU")
+print("1.check even or odd")
+print("2.absolute value")
+print("3.cube")
+print("4.calender(year)")
+print("5.exit")
+a=int(input("enter choice:"))
+if a in range(1,5):
+    print("choice",a)
+if (a==1) or (a==2) or (a==3):
+    b=int(input("enter num  b:"))
+elif (a==4):
+    c=int(input("enter year of calender:"))
+match a:
+    case 1:
+        if (b%2==0):
+            print("even:",b)
+        else :
+            print("odd:",b)
+    case 2:
+        
+            print("abolute value:",abs(b))
+ 
+    case 3:
+        print("cude:",b*b*b)
+    case 4:
+        import  calendar
+        print("calender:",calendar.calendar(c))
+    case 5:
+        print("exit")
+    case _:
+        print("range is out of choice")
+
+
