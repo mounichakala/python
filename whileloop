@@ -1,0 +1,311 @@
+''' i=1
+while i<=10:
+    print("mouni\t",end="")
+    i+=1
+'''
+
+'''i=1
+while i<=100:
+    print(i)
+    i+=1
+'''
+
+'''a=int(input("enter the number"))
+while a>=1:
+    print(a-1)
+    a-=1'''
+'''
+i=97
+while i<=122:
+    print(chr(i))
+    i+=1'''
+'''
+i=1
+a=int(input("enter the number"))
+while i<=a:
+ if i%2==0:
+     print("even",i)
+ i+=1
+'''
+'''
+a=int(input("enter the number:"))
+sum=0
+num=a
+d=len(str(a))
+while a>0:
+    r=a%10
+    sum+=r**d
+    a//=10
+print(sum)
+if sum==num:
+    print("it is a armstrong number:",sum)
+else:
+    print("it is not a armstrong number:", sum)
+  
+  '''
+
+'''a=int(input("enter the series:"))
+b=0
+count=0
+c=int(input("enter the series to start num:"))
+while count>a:
+    b,c=b+c,b
+    print("series:",c)
+'''
+'''
+# Get user input for the number of terms in the Fibonacci series
+num_terms = int(input("Enter the number of terms in the Fibonacci series: "))
+
+
+# Initialize the first two terms
+a, b = 0, 1
+
+# Initialize a counter to keep track of the number of terms
+count = 0
+
+# Print the Fibonacci series
+print("Fibonacci series:")
+
+while count < num_terms:
+    print(a, end=" ")
+    a, b = b, a + b
+   # Update values for the next term
+    count += 1
+'''
+'''1.ADD TO NUMBERS
+# Start the loop
+while True:
+    # Input two numbers
+    num1 = float(input("Enter the first number: "))
+    num2 = float(input("Enter the second number: "))
+
+    # Add the numbers
+    result = num1 + num2
+
+    # Display the result
+    print(f"The sum of {num1} and {num2} is {result}.")
+    break
+In the `while True:` statement, the word `True` means that the loop will continue to run indefinitely until it encounters a `break` statement.
+
+Here's a more detailed explanation:
+- **`while True:`**: This creates an infinite loop because `True` is always true. The loop will keep running forever unless something inside the loop stops it.
+- **`break`:** This statement inside the loop stops the loop when it’s reached. In our example, the `break` occurs right after the sum is calculated and displayed, so the loop only runs once.
+
+So, `True` in this context is just a way to keep the loop running until you decide to stop it manually with `break`.
+'''
+'''
+****2.even odd*****
+while True:
+    # Input the number
+    num = int(input("Enter a number: "))
+
+    # Check if the number is even or odd
+    if num % 2 == 0:
+        print(f"{num} is even.")
+    else:
+        print(f"{num} is odd.")
+
+    # Exit the loop
+    break
+'''
+'''
+4.NEGATIVE OR POSTIVE OR ZER0
+while True:
+    # Input the number
+    num = float(input("Enter a number: "))
+
+    # Check if the number is positive, negative, or zero
+    if num > 0:
+        print(f"{num} is positive.")
+    elif num < 0:
+        print(f"{num} is negative.")
+    else:
+        print(f"{num} is zero.")
+
+    # Exit the loop
+    break
+'''
+'''
+5.ALPHABET OR DIGIT OR SPECIAL CHARACTER
+while True:
+    # Input a character
+    char = input("Enter a character: ")
+
+    # Check if it's an alphabet
+    if char.isalpha():
+        print(f"'{char}' is an alphabet.")
+    # Check if it's a digit
+    elif char.isdigit():
+        print(f"'{char}' is a digit.")
+    # If it's neither, it's a special character
+    else:
+        print(f"'{char}' is a special character.")
+
+    # Exit the loop
+    break
+'''
+'''
+6.CHARACTER IS AN UPPERCASE OR LOWERCASE ALPHABET
+while True:
+    char = input("Enter a character (or '0' to exit): ")
+
+    if len(char) == 1:  # Ensure only one character is input
+        if 'A' <= char <= 'Z':
+            print(f"'{char}' is an uppercase alphabet.")
+        elif 'a' <= char <= 'z':
+            print(f"'{char}' is a lowercase alphabet.")
+        else:
+            print(f"'{char}' is not an alphabet.")
+    else:
+        print("Please enter only one character.")
+    break
+    '''
+'''
+7.VOWELS OR CONSONENT
+while True:
+    # Input an alphabet
+    char = input("Enter an alphabet: ").lower()
+
+    # Check if the input is a single alphabet
+    if len(char) == 1 and char.isalpha():
+        # Check if it's a vowel
+        if char in 'aeiou':
+            print(f"'{char}' is a vowel.")
+        else:
+            print(f"'{char}' is a consonant.")
+    else:
+        print("Please enter a single alphabet.")
+
+    # Exit the loop
+    break
+'''
+'''
+10.GREATEST AMONG THREE NUMBER
+while True:
+    a=int(input("enter the first number:"))
+    b=int(input("enter the second number:"))
+    c=int(input("enter the third number:"))
+    if a>b and a>c:
+        print("a is greater among bc")
+    elif  b>a and b>c:
+        print("b is greater among ac")
+    else:
+        print("c is greater than ba")
+
+    break
+'''
+'''
+9.FACTORIAL OF NUMBER
+    # Prompt the user to enter a non-negative integer
+number = int(input("Enter a non-negative integer: "))
+if number < 0:
+        print("Factorial is not defined for negative numbers.")
+else:
+        # Initialize factorial result and counter
+        factorial = 1
+        count = number
+
+        # Calculate factorial using a while loop
+        while count > 0:
+            factorial *= count
+            count -= 1
+
+        # Print the result
+        print(f"The factorial of {number} is: {factorial}")
+'''
+'''
+#LEAP YEAR
+a=int(input("enter year"))
+while True:
+    if (a%4==0 and a%100!=0) or (a%400==0):
+        print("the number is a leap year:",a)
+    else:
+        print("not a leap year:",a)
+    break
+'''
+'''
+11.#swap to number
+while True:
+    # Input two numbers
+    a = float(input("Enter the first number: "))
+    b = float(input("Enter the second number: "))
+
+    # Print numbers before swapping
+    print(f"Before swapping: a = {a}, b = {b}")
+
+    # Swap the numbers
+    a, b = b, a
+
+    # Print numbers after swapping
+    print(f"After swapping: a = {a}, b = {b}")
+
+    # Exit the loop
+    break
+'''
+'''
+#12.PRIME NUMBER OR NOT
+
+a = int(input("Enter the number: "))
+
+i = 2
+while i <= a // 2:
+    if a % i == 0:
+        print(f"{a} is not a prime number")
+        break
+    i += 1
+else:
+    print(f"{a} is a prime number")
+'''
+'''
+#13.REVERSE OF A NUMBER
+a=int(input("enter the number:"))
+r=0
+while a>0:
+    d=a%10
+    r=r*10+d
+    a=a//10
+print("reverse of a number is:",r)
+'''
+'''
+12.PRIME NUMBER 0R NOT
+i = 2
+a = int(input("Enter the number: "))
+
+# Initialize flag for prime check
+is_prime = True
+
+while i <= a // 2:
+    if a % i == 0:
+        is_prime = False
+        break
+    i += 1
+
+# Output result based on the flag
+if is_prime and a > 1:
+    print(f"{a} is a prime number.")
+else:
+    print(f"{a} is not a prime number.")
+'''
+'''
+14.PERFECT NUMBER OR NOT
+# Input a number
+num = int(input("Enter a number: "))
+
+# Initialize sum of divisors
+sum_of_divisors = 0
+
+# Initialize loop variable
+i = 1
+
+# Loop to find divisors and calculate their sum
+while i <= num // 2:
+    if num % i == 0:
+        sum_of_divisors += i
+    i += 1
+
+# Check if the sum of divisors equals the original number
+if sum_of_divisors == num:
+    print(f"{num} is a perfect number.")
+else:
+    print(f"{num} is not a perfect number.")
+'''
