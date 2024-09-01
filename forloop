@@ -1,0 +1,335 @@
+'''a=int(input("enter the num:"))
+for x in range(a):
+    print(x)
+'''
+'''
+a="shiva"
+for x in a:
+    print(x)
+'''
+'''
+a={1:'hi',2:'you',3:'love'}
+for x in a:
+    print(x)
+'''
+'''
+a={'1':'pavani','2':'hello'}
+print(list(a))
+'''
+'''
+a=int(input("enter the value"))
+for x in range(1,a+1):
+    print(x)
+    '''
+'''
+a=int(input("enter the num:"))
+for x in range(1,a+1):
+        print(x-1)
+'''
+'''
+sum of the digit
+a=int(input("enter the num:"))
+sum=0
+for x in str(a):
+    print('x:',x)
+    y=int(x)%10
+    sum=sum+y;
+print(sum)
+'''
+'''
+sum of given one to number
+a=int(input("enter the num:"))
+sum=0
+for x in range(1,a):
+    sum+=x
+    print(sum)
+'''
+'''
+3.Armstrong num
+a=input('enter the num:')
+sum=0
+l=len(a)
+for x in a:
+    x=int(x)
+    sum=sum+x**l
+if (sum==int(a)):
+        print("it  is a armstrong",sum)
+else:
+        print("it is not a armstrong num",sum)
+'''
+'''
+#prime number
+i=2
+a=int(input("enter number:"))
+isprime=True
+
+for x in range(i,(a//2)+1):
+    if a%x==0:
+        isprime=False
+        break
+if isprime and a>1:
+    print("it is a prime number:",a)
+else:
+    print("it is not a prime num:",a)
+'''
+'''
+#5.Factorial
+i=1
+fact=1
+a=int(input("enter the num:"))
+for c in range(i,a+1):
+    fact=fact*c
+print("fact",c)
+'''
+'''
+6.SUM OF TWO NUMBERS
+# Input: Get two numbers from the user
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+
+# Initialize sum to 0
+sum = 0
+
+# Use a for loop to add the two numbers
+for num in (num1, num2):
+    sum += num
+
+# Output: Display the sum
+print(f"The sum of {num1} and {num2} is: {sum}")
+'''
+'''
+a = input("Enter the number: ")
+
+for x in a:  # Directly iterate over each character in the string
+    if int(x) % 2 == 0:  # Convert each character to an integer to check even/odd
+        print(f"{x} is an even number")
+    else:
+        print(f"{x} is an odd number")
+'''
+'''
+#8.NEGATIVE ,POSITIVE,ZERO
+x=input("enter the number")
+for y in x:
+    z=int(y)
+    if(z>0):
+        print("postive no")
+    elif(z<0):
+        print("negative no")
+    else:
+        print(" it is a zero")
+'''
+'''
+9.character or digit or special character
+a=input("enter the num:")
+for x in a:
+    if x.isalpha():
+        print("it is a alphabet")
+    elif x.isdigit():
+        print("it is a numeric value")
+    else:
+        print("it is a speacial character")
+Explanation:
+isalpha() Method: Checks if the character is an alphabet letter.
+isdigit() Method: Checks if the character is a digit. Since input() returns a string, isdigit() works directly on the string representation of numbers.
+Else Statement: If neither isalpha() nor isdigit() is true, the character is treated as a special character.
+Example:
+Input: Enter the input: 8
+Output:
+8 is a numeric value
+This code correctly classifies each character of the string based on whether it's an alphabet, numeric value, or special character. Even though 8 is numeric, it's treated as a string by input(), but isdigit() correctly identifies it as a digit.
+'''
+'''
+#10 uppercase and lower case character
+a=input("enter the character:")
+for x in a:
+    if 'A'>=x<='Z':
+        print("its a uppercase char")
+    else:
+       print("it is a lower case char")
+       a = input("Enter the character: ")
+
+for x in a:
+    if 'A' <= x <= 'Z':  # Check if the character is an uppercase letter
+        print(f"{x} is an uppercase character")
+    elif 'a' <= x <= 'z':  # Check if the character is a lowercase letter
+        print(f"{x} is a lowercase character")
+    else:
+        print(f"{x} is neither uppercase nor lowercase")
+
+'''
+'''
+#11.vowels or consonants:
+a=input("enter character ")
+for x in a:
+    if x in 'aeiouAEIOU':
+        print("it is a vowels")
+    else:
+        print("it is not a vowels it is consonants")
+'''
+'''
+#gretest among the number
+# Input three numbers from the user
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+num3 = int(input("Enter the third number: "))
+
+# Store the numbers in a tuple
+numbers = (num1, num2, num3)
+
+# Initialize the variable to store the greatest number
+greatest = numbers[0]
+
+# Iterate through the tuple to find the greatest number
+for num in numbers:
+    if num > greatest:
+        greatest = num
+
+print(f"The greatest number is: {greatest}")
+
+# Input a single year from the user
+year = int(input("Enter a year: "))
+
+# Initialize a list with just one year for the loop to iterate over
+years = [year]
+
+# For loop to iterate through the list of years
+for y in years:
+    # Check if the year is a leap year
+    if (y % 4 == 0 and y % 100 != 0) or (y % 400 == 0):
+        print(f"{y} is a leap year.")
+    else:
+        print(f"{y} is not a leap year.")
+'''
+'''
+#swap to numbers
+
+# Input two numbers from the user
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+
+# Use a list to hold the numbers
+numbers = [num1, num2]
+
+# Use a for loop to perform the swap
+for i in range(len(numbers)):
+    if i == 0:
+        # Temporarily store the first number
+        temp = numbers[i]
+        # Assign the second number to the first position
+        numbers[i] = numbers[1]
+    elif i == 1:
+        # Assign the stored first number to the second position
+        numbers[i] = temp
+
+# Extract the swapped values
+num1, num2 = numbers
+
+print(f"After swapping: First number = {num1}, Second number = {num2}")
+'''
+'''
+#reverse of a number
+# Input a number from the user
+num = int(input("Enter a number: "))
+reversed_num = 0
+
+# For loop to reverse the number
+for _ in range(len(str(num))):
+    digit = num % 10             # Get the last digit of the number
+    reversed_num = reversed_num * 10 + digit  # Add it to the reversed number
+    num = num // 10              # Remove the last digit from the number
+
+print(f"The reverse of the number is: {reversed_num}")
+#***********or**********
+# Input a number from the user
+num = int(input("Enter a number: "))
+
+# Convert the number to a string to iterate over it
+num_str = str(num)
+
+# Initialize an empty string to store the reversed number
+reversed_str = ""
+
+# Use a for loop to iterate over the string in reverse order
+for digit in num_str[::-1]:
+    reversed_str += digit
+
+# Convert the reversed string back to an integer
+reversed_num = int(reversed_str)
+
+print(f"The reverse of the number is: {reversed_num}")
+'''
+'''
+#perfect number
+# Input a number from the user
+num = int(input("Enter a number: "))
+
+# Initialize sum of divisors
+sum_of_divisors = 0
+
+# Use a for loop to find all divisors of the number
+for i in range(1, num):
+    if num % i == 0:  # Check if i is a divisor of num
+        sum_of_divisors += i  # Add the divisor to the sum
+
+# Check if the sum of divisors equals the original number
+if sum_of_divisors == num:
+    print(f"{num} is a perfect number.")
+else:
+    print(f"{num} is not a perfect number.")
+    '''
+'''
+#plaindrome
+# Input a number from the user
+num = input("Enter a number: ")
+
+# Convert the number to a string to iterate over it
+
+
+# Initialize an empty string to store the reversed number
+reversed_str = ""
+
+# Use a for loop to iterate over the string in reverse order
+for digit in num[::-1]:
+    reversed_str += digit
+
+# Check if the reversed string is the same as the original string
+if reversed_str == num:
+    print(f"{num} is a palindrome.")
+else:
+    print(f"{num} is not a palindrome.")
+
+for x in range(4):
+    for y in range(4):
+        print("hi",end="")
+    print()
+'''
+'''
+for x in range(3):
+    for y in range(1,6):
+        print(y,end="")
+    print()
+'''
+'''
+for x in range(5):
+    for y in range(5):
+        print("*",end="")
+    print()
+'''
+'''
+for x in :
+    for y in range(1,6):
+        print(x,end="")
+    print()
+'''
+'''
+for x in range(5):
+    for y in range(5):
+        print(chr(chr(65+x),end="")
+    print()
+'''
+'''
+for x in range(1,6):
+    for y in range(x):
+        print(chr(65+y),end="")
+    print()
+'''
